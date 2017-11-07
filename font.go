@@ -22,7 +22,7 @@ func newFont(name string) (font font) {
 	font.setName(name)
 	// file := getFile(font.name)
 	// defer file.Close()
-	data, err := Asset(name + ".flf")
+	data, err := Asset(font.name + ".flf")
 	if err != nil {
 		panic(err)
 	}
